@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>JS Drum Kit</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <div class="container">
+    <div class="flex-grid">
+      <div data-key="65" class="key">
+        <button name="65" class="kbd">A</button>
+        <span class="sound">bling</span>
+      </div>
+
+      <div data-key="83" class="key">
+        <button name="83" class="kbd">S</button>
+        <span class="sound">brip</span>
+      </div>
+
+      <div data-key="68" class="key">
+        <button name="68" class="kbd">D</button>
+        <span class="sound">bloop</span>
+      </div>
+    
+   
+    
+
+    
+      <div data-key="70" class="key">
+        <button name="70" class="kbd">F</button>
+        <span class="sound">blablabla</span>
+      </div>
+      <div data-key="71" class="key">
+        <button name="71" class="kbd">G</button>
+        <span class="sound">skililil</span>
+      </div>
+      <div data-key="72" class="key">
+        <button name="72" class="kbd">H</button>
+        <span class="sound">brlrlrl</span>
+      </div>
+    
+
+    
+      <div data-key="74" class="key">
+        <button name="74" class="kbd">J</button>
+        <span class="sound">brlip</span>
+      </div>
+      <div data-key="75" class="key">
+        <button name="75" class="kbd">K</button>
+        <span class="sound">mrrmrmr</span>
+      </div>
+      <div data-key="76" class="key">
+        <button name="76" class="kbd">L</button>
+        <span class="sound">loololo</span>
+      
+    </div>
+  </div>
+</div>
+</div>
+    
+
+    <audio data-key="65" src="sounds/sound01.wav"></audio>
+    <audio data-key="83" src="sounds/sound02.wav"></audio>
+    <audio data-key="68" src="sounds/sound03.wav"></audio>
+    <audio data-key="70" src="sounds/sound04.wav"></audio>
+    <audio data-key="71" src="sounds/sound05.wav"></audio>
+    <audio data-key="72" src="sounds/sound06.wav"></audio>
+    <audio data-key="74" src="sounds/sound07.wav"></audio>
+    <audio data-key="75" src="sounds/sound08.wav"></audio>
+    <audio data-key="76" src="sounds/sound09.wav"></audio>
+
+    <script src="src/drum.js"></script>
+  </body>
+</html>
