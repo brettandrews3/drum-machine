@@ -1,6 +1,6 @@
 html {
   font-size: 10px;
-  background: gray;
+  background: url(images/invaders.jpg);
   background-size: cover;
 }
 
@@ -10,8 +10,18 @@ html {
   padding: 0;
   font-family: sans-serif;
 }
+
+/*.header {
+  display: flex;
+  height: 100px;
+  font-size: 5rem;
+  justify-content: center;
+  align-items: center;
+}*/
 .container {
   display: flex;
+  height: 100vh;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -23,17 +33,15 @@ html {
   height: 75vh;
   width: 75vh;
   align-items: center;
-  /*align-content: center;
   justify-content: center;
-  align-self: center;*/
+  flex-direction: column;
+  /*align-content: center;
+  justify-content: center;*/
+  align-self: center;
 }
 
 .flex-grid .col {
   flex: 1;
-}
-
-.col {
-  grid-column-gap: 0;
 }
 
 .key {
@@ -41,17 +49,18 @@ html {
   border-radius: 0.8rem;
   margin: 1rem;
   font-size: 1.5rem;
+  color: white;
   padding: 1rem 0.5rem;
   transition: all 0.07s ease;
   width: 10rem;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.9);
   text-shadow: 0 0 0.5rem black;
 }
 
 .playing {
   transform: scale(1.1);
-  border-color: #ffc600;
-  box-shadow: 0 0 1rem #ffc600;
+  border-color: #5dbcd2;
+  box-shadow: 0 0 1rem #5dbcd2;
   color: white;
 }
 
@@ -64,7 +73,7 @@ html {
   font-size: 1.2rem;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
-  color: #ffc600;
+  color: lightpink;
 }
 
 button {
@@ -74,7 +83,7 @@ button {
   margin: 0 auto;
   text-decoration: none;
   background: none;
-  color: none;
+  color: white;
   cursor: pointer;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -87,4 +96,8 @@ button:focus {
 
 button:active {
   transform: scale(0.95);
+}
+
+.space {
+  height: 10vh;
 }
